@@ -359,3 +359,43 @@ h2.box-label {
   font-size: 1.2em;
   color: #000;
 }
+
+/* Mobile responsiveness */
+@media (max-width: 1000px) {
+  body {
+    overflow: visible;
+  }
+
+  .boxes {
+    flex-direction: column; /* Stack boxes vertically */
+    align-items: center;
+    width: 100%; /* Full width */
+    height: auto; /* Allow height to adjust */
+    gap: 20px; /* Maintain gap between boxes */
+    padding-top: 50px;
+  }
+  .title-section h1 {
+    padding-top: 20px;
+    font-size: 2.5em; /* Smaller font size for mobile */
+  }
+
+  .box {
+    display: flex;
+    justify-content: center;
+  }
+
+  h2.box-label {
+    align-content: center;
+  }
+
+  .title-section h2 {
+    font-size: 1.5em; /* Smaller font size for mobile */
+    padding: 8px 15px; /* Reduce padding */
+    width: 80%;
+  }
+
+  .lead-text span {
+    font-size: 1em; /* Reduce text size for mobile */
+    padding-bottom: 100px;
+  }
+}
