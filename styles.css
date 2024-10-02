@@ -75,11 +75,11 @@ body {
 }
 
 h2.box-label {
-  font-size: 2em;
+  font-size: 1.5em;
   background-color: transparent;
   color: #fff;
   font-weight: bold;
-  margin-top: 20px;
+  align-content: center;
 }
 
 /* Stretch Navbar across the width and align to right */
@@ -305,6 +305,7 @@ h2.box-label {
 }
 
 .box {
+  display: flex;
   background-color: #fff;
   border: 6px solid #000;
   padding: 30px;
@@ -318,6 +319,7 @@ h2.box-label {
   transition: transform 0.2s ease, box-shadow 0.2s ease,
     background-color 0.3s ease, color 0.3s ease;
   cursor: pointer;
+  justify-content: center;
 }
 
 .box:hover {
