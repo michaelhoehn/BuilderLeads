@@ -374,16 +374,17 @@ h2.box-label {
     width: 100%; /* Full width */
     height: auto; /* Allow height to adjust */
     gap: 20px; /* Maintain gap between boxes */
-    padding-top: 50px;
   }
   .title-section h1 {
-    padding-top: 20px;
-    font-size: 2.5em; /* Smaller font size for mobile */
+    padding-top: 30px;
+    font-size: 3em; /* Smaller font size for mobile */
   }
 
   .box {
     display: flex;
     justify-content: center;
+    width: 250px;
+    height: 250px;
   }
 
   h2.box-label {
@@ -393,7 +394,7 @@ h2.box-label {
   .title-section h2 {
     font-size: 1.5em; /* Smaller font size for mobile */
     padding: 8px 15px; /* Reduce padding */
-    width: 80%;
+    width: 100%;
   }
 
   .lead-text span {
