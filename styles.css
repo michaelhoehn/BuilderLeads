@@ -74,6 +74,31 @@ body {
   margin-top: 20px;
 }
 
+h2.box-label {
+  font-size: 2em;
+  background-color: transparent;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Stretch Navbar across the width and align to right */
+.navbar {
+  width: 100%;
+  justify-content: flex-end;
+}
+
+/* Make sure the background color stretches across */
+.collapse .bg-dark {
+  width: 100%;
+}
+
+/* Button container */
+.button-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
 /* Button container */
 .button-wrapper {
   position: relative;
@@ -232,4 +257,105 @@ body {
 
 .close-btn:hover {
   color: #ff0000;
+}
+
+/* Flex container for title and boxes */
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full page height */
+}
+
+/* Title section */
+.title-section {
+  height: 300px; /* Fixed height for the title section */
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style for h1 */
+.title-section h1 {
+  font-size: 4em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Style for h2 */
+.title-section h2 {
+  font-size: 2em;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  width: 57%;
+}
+
+/* Box styles for the Connect, Build, Grow section */
+.boxes {
+  display: flex;
+  justify-content: space-between;
+  height: 350px; /* Fixed height for the boxes section */
+  width: calc(300px * 3 + 40px); /* 3 boxes of 300px + 2 gaps of 20px */
+  gap: 20px; /* Gap between the boxes */
+  margin: 0 auto; /* Center the boxes container */
+}
+
+.box {
+  background-color: #fff;
+  border: 6px solid #000;
+  padding: 30px;
+  width: 300px;
+  height: 300px; /* Static height and width */
+  box-shadow: 10px 10px 0 #000;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease,
+    background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.box:hover {
+  background-color: #000;
+  color: #fff;
+  transform: translate(10px, 10px);
+  box-shadow: 0px 0px 0 rgba(0, 0, 0, 0);
+  cursor: crosshair;
+}
+
+.box h2 {
+  color: #000;
+}
+
+.box:hover h2 {
+  display: none;
+}
+
+.hover-text {
+  display: none;
+  text-align: left;
+}
+
+.box:hover .hover-text {
+  display: block;
+  color: #fff;
+  font-size: 1em;
+  margin-top: 20px;
+}
+
+/* Lead text below the boxes */
+.lead-text {
+  height: 50px; /* Fixed height for the lead text */
+  text-align: center;
+  padding-top: 60px;
+}
+
+.lead-text span {
+  font-size: 1.2em;
+  color: #000;
 }
