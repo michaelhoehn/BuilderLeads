@@ -35,7 +35,6 @@ body {
   color: #000;
 }
 
-/* Slow down the scrolling speed and make the animation smoother */
 @keyframes scroll-text {
   0% {
     transform: translateX(100%);
@@ -75,20 +74,39 @@ body {
   margin-top: 20px;
 }
 
-/* Button styles for "Connect with us" */
-.connect-btn {
-  background-color: #000;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  font-size: 1.2em;
-  cursor: pointer;
-  margin-top: 20px;
+/* Button container */
+.button-wrapper {
+  position: relative;
+  display: inline-block;
 }
 
-.connect-btn:hover {
-  background-color: #333;
+/* Button styles for "Connect With Us" */
+.connect-btn {
+  margin-top: 20px;
+  position: relative;
+  background-color: #fff;
+  color: #000;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  border: 6px solid #000;
+  cursor: pointer;
+  box-shadow: 10px 10px 0 #000; /* Shadow offset by 10px */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+/* Button animation on click */
+.connect-btn:active {
+  transform: translate(10px, 10px); /* Move button down/right by 10px */
+  box-shadow: 0 0 0 #000; /* Shadow disappears as it moves */
+}
+
+/* .connect-btn:hover {
+  background-color: #000;
+  color: white;
+  transition: 0.5s ease-in-out;
+} */
 
 /* Modal Styles */
 .modal {
@@ -137,7 +155,7 @@ body {
 
 /* Remove border from the fieldset */
 #fs-frm-inputs {
-  border: none; /* Remove the default fieldset border */
+  border: none;
   padding: 0;
   margin: 0;
 }
@@ -163,7 +181,7 @@ body {
   border: 1px solid #ccc;
   border-radius: 5px;
   width: 100%;
-  box-shadow: none; /* No shadow or border effects */
+  box-shadow: none;
 }
 
 #fs-frm input::placeholder,
